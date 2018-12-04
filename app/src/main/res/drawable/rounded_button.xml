@@ -14,13 +14,22 @@
             <size
                 android:height="30dp"/>
             <solid
-                android:color="#2a756d"/>
+                android:color="#EBEBEB"/>
+            <gradient
+                android:angle="45"
+                android:centerX="48%"
+                android:centerColor="#D4D4D4"
+                android:startColor="#FFFFFF"
+                android:endColor="#BFBFBF"
+                android:type="linear"
+                />
         </shape>
     </item>
     <item>
         <shape
             android:shape="rectangle">
             <corners
+
                 android:bottomLeftRadius="70dp"
                 android:radius="70dp"
                 android:topRightRadius="70dp"
@@ -29,7 +38,19 @@
             <size
                 android:height="30dp"/>
             <solid
-                android:color="#379e93"/>
+                android:color="#EBEBEB"/>
+            <gradient
+                android:angle="45"
+                android:centerX="48%"
+                android:centerColor="#D4D4D4"
+                android:startColor="#FFFFFF"
+                android:endColor="#BFBFBF"
+                android:type="linear"
+                />
         </shape>
+
     </item>
+
 </selector>
+
+
