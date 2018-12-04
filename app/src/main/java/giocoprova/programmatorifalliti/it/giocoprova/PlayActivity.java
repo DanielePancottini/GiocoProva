@@ -8,6 +8,8 @@ import android.widget.TextView;
 public class PlayActivity extends AppCompatActivity {
 
     public TextView counterText;
+    public static int counterScore;
+    public CountDownTimer countDownTimer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +18,16 @@ public class PlayActivity extends AppCompatActivity {
 
         startCounter();
 
+        do{
+            Palla.spawnBall();
+        }while(countDownTimer.equals(60));
+
     }
 
     public void startCounter(){
         counterText = (TextView) findViewById(R.id.timerPlay);
 
-        CountDownTimer countDownTimer = new CountDownTimer(60*1000, 1000) {
+        countDownTimer = new CountDownTimer(60*1000, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 counterText.setText("" + millisUntilFinished/1000);
