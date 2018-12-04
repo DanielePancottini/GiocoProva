@@ -18,10 +18,6 @@ public class PlayActivity extends AppCompatActivity {
 
         startCounter();
 
-        do{
-            Palla.spawnBall();
-        }while(countDownTimer.equals(60));
-
     }
 
     public void startCounter(){
@@ -31,6 +27,7 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onTick(long millisUntilFinished) {
                 counterText.setText("" + millisUntilFinished/1000);
+                Palla.spawnBall();
             }
 
             @Override
